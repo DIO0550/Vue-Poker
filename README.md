@@ -1,2 +1,2 @@
-# Vue-Reversi
-Vue + Typescript + docker + Reversi
+# Vue-Poker
+Vue + Typescript + docker + Poker
