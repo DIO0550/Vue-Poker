@@ -1,0 +1,15 @@
+FROM python:3.7
+
+# バッファリング無効
+ENV PYTHONUNBUFFERED 1
+
+# フォルダ作成
+RUN mkdir backend
+WORKDIR /backend
+
+COPY src/backend/requirements.txt /backend
+
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+ADD src/backend/django /backend
