@@ -8,4 +8,6 @@ WORKDIR /frontend
 
 ADD src/frontend /frontend
 
+RUN npm install -D
+
 EXPOSE 3035
