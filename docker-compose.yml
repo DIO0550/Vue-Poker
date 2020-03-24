@@ -18,7 +18,7 @@ services:
     volumes:
       - ./src/backend/django:/backend
     ports:
-      - 3000:3000
+      - 3035:3035
     depends_on:
       - db
     tty: true
@@ -37,7 +37,10 @@ services:
     volumes:
      - ./src/frontend:/frontend
     ports:
-     - 3035:3035
+     - 3000:3000
+    environment:
+      PORT: 3000
+      HOST: 0.0.0.0
     networks:
      - vue-poker
     tty: true
