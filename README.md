@@ -1,2 +1,2 @@
 # Vue-Poker
-Vue + Typescript + docker + Poker
+Vue + Typescript + docker + Poker + NuxtJS
