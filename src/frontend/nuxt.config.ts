@@ -24,7 +24,9 @@ const nuxtConfig: Configuration = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    '@/assets/stylesheets/main.sass'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
