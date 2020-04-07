@@ -45,11 +45,11 @@ $input-height: 40px
   width: $input-width
   height: $input-height
   font-size: 25px
+  box-sizing: border-box
 
 .login-field:focus
   border: 3px solid blue
-  width: $input-width
-  height: $input-height
+  box-sizing: border-box
 
 .password-field
   margin-top: 10px
@@ -57,11 +57,11 @@ $input-height: 40px
   width: $input-width
   height: $input-height
   font-size: 25px
+  box-sizing: border-box
 
 .password-field:focus
   border: 3px solid blue
-  width: $input-width
-  height: $input-height
+  box-sizing: border-box
 
 .login-button
   width: $input-width
@@ -70,6 +70,7 @@ $input-height: 40px
   margin-bottom: 10px
   background-color: aqua
   font-size: 25px
+  border-radius: 10px
 </style>
 
 <style lang="sass">
