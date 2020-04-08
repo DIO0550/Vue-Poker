@@ -1,19 +1,21 @@
 <template>
   <div class="container">
-    <input class="login-field" type="text" placeholder="ログインID" />
-    <input
-      v-model="password"
-      class="password-field"
-      type="password"
-      placeholder="パスワード"
-    />
-    <input
-      v-model="reEnteredPassword"
-      class="password-field"
-      type="password"
-      placeholder="パスワード再入力"
-    />
-    <div v-if="!isSameTwoPassword">パスワードが違います。</div>
+    <label class="username-label">
+      ユーザ名
+    </label>
+    <input class="user-name-field" type="text" />
+    <label>
+      パスワード
+    </label>
+    <input v-model="password" class="password-field" type="password" />
+    <label>
+      パスワード再入力
+    </label>
+    <input v-model="reEnteredPassword" class="password-field" type="password" />
+    <div v-if="!isSameTwoPassword" class="password-error-message">
+      パスワードが違います。
+    </div>
+    <button>登録</button>
   </div>
 </template>
 
@@ -37,4 +39,10 @@ export default Vue.extend({
   }
 })
 </script>
-<style lang="sass" scoped></style>
+<style lang="sass" scoped>
+.password-error-message
+  color: red
+
+label, input
+  display: block
+</style>
