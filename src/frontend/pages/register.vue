@@ -15,7 +15,7 @@
     <div v-if="!isSameTwoPassword" class="password-error-message">
       パスワードが違います。
     </div>
-    <button>登録</button>
+    <button class="register-button">登録</button>
   </div>
 </template>
 
@@ -45,4 +45,16 @@ export default Vue.extend({
 
 label, input
   display: block
+
+input
+  height: 30px
+  width: 300px
+
+.register-button
+  background-color: rgb(0, 191, 255)
+  border-radius: 10px
+  color: white
+  width: 300px
+  height: 30px
+  margin-top: 20px;
 </style>
