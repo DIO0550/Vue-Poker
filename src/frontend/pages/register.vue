@@ -1,21 +1,30 @@
 <template>
   <div class="container">
-    <label class="username-label">
-      ユーザ名
-    </label>
-    <input class="user-name-field" type="text" />
-    <label>
-      パスワード
-    </label>
-    <input v-model="password" class="password-field" type="password" />
-    <label>
-      パスワード再入力
-    </label>
-    <input v-model="reEnteredPassword" class="password-field" type="password" />
-    <div v-if="!isSameTwoPassword" class="password-error-message">
-      パスワードが違います。
+    <div class="form-block">
+      <label class="username-label">
+        ユーザ名
+      </label>
+      <input class="user-name-field" type="text" />
+      <label>
+        パスワード
+      </label>
+      <input v-model="password" class="password-field" type="password" />
+      <label>
+        パスワード再入力
+      </label>
+      <input
+        v-model="reEnteredPassword"
+        class="password-field"
+        type="password"
+      />
+      <div v-if="!isSameTwoPassword" class="password-error-message">
+        パスワードが違います。
+      </div>
+      <div class="button-block">
+        <button class="register-button">登録</button>
+        <button class="back-button">戻る</button>
+      </div>
     </div>
-    <button class="register-button">登録</button>
   </div>
 </template>
 
@@ -40,21 +49,51 @@ export default Vue.extend({
 })
 </script>
 <style lang="sass" scoped>
+$form-width: 300px
+$form-button-margin: 10px
+
+.username-label
+  margin-top: 20px;
+
 .password-error-message
   color: red
 
 label, input
   display: block
+  margin-left: 20px
+  margin-right: 20px
 
 input
   height: 30px
-  width: 300px
+  width: $form-width
 
 .register-button
   background-color: rgb(0, 191, 255)
   border-radius: 10px
   color: white
-  width: 300px
+  width: calc(calc(#{$form-width} - #{$form-button-margin}) / 2.0)
   height: 30px
   margin-top: 20px;
+  display: flexbox
+  margin-left: 20px
+  margin-bottom: 20px
+
+.back-button
+  margin-left: $form-button-margin
+  width: calc(calc(#{$form-width} - #{$form-button-margin}) / 2.0)
+  height: 30px
+  border-radius: 10px
+  margin-right: 20px
+  margin-bottom: 20px
+
+.form-block
+  background-color: aqua
+  border: 2px solid gray
+
+.container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 500px
 </style>
