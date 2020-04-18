@@ -22,7 +22,7 @@
       </div>
       <div class="button-block">
         <button class="register-button">登録</button>
-        <button class="back-button">戻る</button>
+        <button class="back-button" @click="pushTop">戻る</button>
       </div>
     </div>
   </div>
@@ -44,6 +44,11 @@ export default Vue.extend({
      */
     isSameTwoPassword(): boolean {
       return this.password === this.reEnteredPassword
+    }
+  },
+  methods: {
+    pushTop() {
+      this.$router.push('/')
     }
   }
 })
