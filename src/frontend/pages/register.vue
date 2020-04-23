@@ -30,7 +30,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-
 export default Vue.extend({
   data() {
     return {
@@ -62,6 +61,7 @@ $form-button-margin: 10px
 
 .password-error-message
   color: red
+  margin-left: 20px;
 
 label, input
   display: block
