@@ -24,6 +24,7 @@
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^24.1.0",
+    "dpoker-lib": "0.0.3",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-loader": "^3.0.3",
