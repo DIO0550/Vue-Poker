@@ -42,23 +42,21 @@ $button-margin: 10px
   height: 500px
 
 .title
-  color: white
+  color: gray
   font-size: 40px
+  margin-top: 20px
 
 .login-block
   margin-top: 30px
-  height: 1000px
-  width: 500px
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
-  border: solid 10px rgba(0, 100, 0, 1.0)
-  box-shadow: 10px 20px 20px rgba(100, 100, 100, 1.0);
-  background-color: green
+  background-color: white
+  border-radius: 10px
 
 .login-field
-  margin-top: 20px
+  margin-top: 5px
   border: 1px solid black
   width: $input-width
   height: $input-height
@@ -103,5 +101,5 @@ $button-margin: 10px
 
 <style lang="sass">
 body
-    background-color: rgb(144, 238, 144)
+    background-color: #00FFCC
 </style>

@@ -57,11 +57,11 @@ $form-width: 300px
 $form-button-margin: 10px
 
 .username-label
-  margin-top: 20px;
+  margin-top: 20px
 
 .password-error-message
   color: red
-  margin-left: 20px;
+  margin-left: 20px
 
 label, input
   display: block
@@ -69,7 +69,7 @@ label, input
   margin-right: 20px
 
 input
-  height: 30px
+  height: 40px
   width: $form-width
 
 .register-button
@@ -77,8 +77,8 @@ input
   border-radius: 10px
   color: white
   width: calc(calc(#{$form-width} - #{$form-button-margin}) / 2.0)
-  height: 30px
-  margin-top: 20px;
+  height: 40px
+  margin-top: 20px
   display: flexbox
   margin-left: 20px
   margin-bottom: 20px
@@ -86,7 +86,7 @@ input
 .back-button
   margin-left: $form-button-margin
   width: calc(calc(#{$form-width} - #{$form-button-margin}) / 2.0)
-  height: 30px
+  height: 40px
   border-radius: 10px
   margin-right: 20px
   margin-bottom: 20px
