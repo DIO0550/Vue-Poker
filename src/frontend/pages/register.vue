@@ -92,8 +92,9 @@ input
   margin-bottom: 20px
 
 .form-block
-  background-color: aqua
+  background-color: white
   border: 2px solid gray
+  border-radius: 10px
 
 .container
   display: flex

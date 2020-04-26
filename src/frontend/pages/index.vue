@@ -54,6 +54,7 @@ $button-margin: 10px
   align-items: center
   background-color: white
   border-radius: 10px
+  box-shadow: 20px 20px 10px #6699CC
 
 .login-field
   margin-top: 5px
