@@ -1,6 +1,11 @@
 <template>
   <div class="card">
-    {{ cardMark }}
+    <div class="top-mark" :class="cardColor">
+      {{ cardMarkText }}
+    </div>
+    <div class="bottom-mark" :class="cardColor">
+      {{ cardMarkText }}
+    </div>
   </div>
 </template>
 
@@ -11,7 +16,7 @@ export default Vue.extend({
   props: {
     cardMark: {
       type: String,
-      default: '♠︎',
+      default: DPokerLib.card.CARD_MARK.CLUB,
       required: true
     },
     cardNumber: {
@@ -33,6 +38,28 @@ export default Vue.extend({
       }
 
       return 'card-red'
+    },
+    /**
+     * マークの文字列
+     */
+    cardMarkText() {
+      if (this.cardMark === DPokerLib.card.CARD_MARK.SPADE) {
+        return '♠'
+      }
+
+      if (this.cardMark === DPokerLib.card.CARD_MARK.HEART) {
+        return '♥'
+      }
+
+      if (this.cardMark === DPokerLib.card.CARD_MARK.DIAMOND) {
+        return '♦'
+      }
+
+      if (this.cardMark === DPokerLib.card.CARD_MARK.CLUB) {
+        return '♣'
+      }
+
+      return 'JOKER'
     }
   }
 })
@@ -43,4 +70,22 @@ export default Vue.extend({
     width: 200px
     border-radius: 10px
     border: 2px solid
+    position: relative
+
+.card-black
+    color: black
+
+.card-red
+    color: red
+
+.top-mark
+    font-size: 50px
+    position: absolute
+
+.bottom-mark
+    font-size: 50px
+    position: absolute
+    bottom: 0px
+    right: 0px
+    transform: rotate(180deg)
 </style>
