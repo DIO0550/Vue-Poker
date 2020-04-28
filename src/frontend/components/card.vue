@@ -3,8 +3,14 @@
     <div class="top-mark" :class="cardColor">
       {{ cardMarkText }}
     </div>
+    <div class="top-number">
+      {{ cardNumberText }}
+    </div>
     <div class="bottom-mark" :class="cardColor">
       {{ cardMarkText }}
+    </div>
+    <div class="bottom-number">
+      {{ cardNumberText }}
     </div>
   </div>
 </template>
@@ -21,7 +27,7 @@ export default Vue.extend({
     },
     cardNumber: {
       type: Number,
-      default: 0,
+      default: 1,
       required: true
     }
   },
@@ -60,6 +66,34 @@ export default Vue.extend({
       }
 
       return 'JOKER'
+    },
+    /**
+     * カードの数字テキスト
+     */
+    cardNumberText() {
+      // Joker
+      if (this.cardNumber === 0) {
+        return ''
+      }
+
+      // エース
+      if (this.cardNumber === 1) {
+        return 'A'
+      }
+
+      if (this.cardNumber === 11) {
+        return 'J'
+      }
+
+      if (this.cardNumber === 12) {
+        return 'Q'
+      }
+
+      if (this.cardNumber === 13) {
+        return 'K'
+      }
+
+      return String(this.cardNumber)
     }
   }
 })
@@ -87,5 +121,18 @@ export default Vue.extend({
     position: absolute
     bottom: 0px
     right: 0px
+    transform: rotate(180deg)
+
+.top-number
+  font-size: 40px
+  position: absolute
+  top: 40px
+  left: 5px
+
+.bottom-number
+    font-size: 40px
+    position: absolute
+    bottom: 40px
+    right: 5px
     transform: rotate(180deg)
 </style>
