@@ -95,6 +95,7 @@ input
   background-color: white
   border: 2px solid gray
   border-radius: 10px
+  box-shadow: 20px 20px 10px #6699CC
 
 .container
   display: flex
@@ -102,4 +103,8 @@ input
   justify-content: center
   align-items: center
   height: 500px
+</style>
+<style lang="sass">
+body
+    background-color: #00FFCC
 </style>
