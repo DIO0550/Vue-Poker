@@ -3,13 +3,13 @@
     <div class="top-mark" :class="cardColor">
       {{ cardMarkText }}
     </div>
-    <div class="top-number">
+    <div class="top-number" :class="cardColor">
       {{ cardNumberText }}
     </div>
     <div class="bottom-mark" :class="cardColor">
       {{ cardMarkText }}
     </div>
-    <div class="bottom-number">
+    <div class="bottom-number" :class="cardColor">
       {{ cardNumberText }}
     </div>
   </div>
@@ -127,12 +127,12 @@ export default Vue.extend({
   font-size: 40px
   position: absolute
   top: 40px
-  left: 5px
+  left: 6px
 
 .bottom-number
     font-size: 40px
     position: absolute
     bottom: 40px
-    right: 5px
+    right: 6px
     transform: rotate(180deg)
 </style>
