@@ -1,16 +1,14 @@
 <template>
   <div>
-    <div class="hand-magnification-block">
-      ロイヤルストレートフラッシュ ファイブカード ストレートフラッシュ
-      フォーカード フルハウス フラッシュ ストレート スリーカード ツーペア
-      ワンペア
+    <handMagnificationInfo />
+    <div class="card-block">
+      <card
+        v-for="card in handCards"
+        :key="card.number + card.mark"
+        :card-mark="card.mark"
+        :card-number="card.number"
+      ></card>
     </div>
-    <card
-      v-for="card in handCards"
-      :key="card.number + card.mark"
-      :card-mark="card.mark"
-      :card-number="card.number"
-    ></card>
     <div class="game-info-block">
       <div>
         MONEY
@@ -19,16 +17,17 @@
         BET
       </div>
     </div>
-    <button @click="gameStart">START</button>
+    <button class="start-button" @click="gameStart">START</button>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import Card from '../components/card.vue'
+import HandMagnificationInfo from '../components/HandMagnificationInfo.vue'
 const DPokerLib = require('dpoker-lib')
 export default Vue.extend({
-  components: { Card },
+  components: { Card, HandMagnificationInfo },
   data() {
     return {
       handCards: [],
@@ -54,4 +53,15 @@ export default Vue.extend({
 <style lang="sass" scoped>
 .hand-magnification-block
   border: 1px solid red
+
+.start-button
+  width: 200px
+  height: 50px
+  border-radius: 10px
+  box-shadow: 10px 5px 5px red;
+  font-size: 20px
+
+.card-block
+  display: flex
+  width: 2000px
 </style>
