@@ -58,6 +58,8 @@ services:
       MYSQL_DATABASE: vuepoker
       MYSQL_USER: vuepoker
       MYSQL_PASSWORD: vuepoker
+    ports:
+     - 3306:3306
 
 volumes:
   db-volume:
