@@ -1,15 +1,19 @@
 <template>
   <div class="hand-magnification-block">
-    <div class="hand">ロイヤルストレートフラッシュ</div>
-    <div class="hand">ファイブカード</div>
-    <div class="hand">ストレートフラッシュ</div>
-    <div class="hand">フォーカード</div>
-    <div class="hand">フルハウス</div>
-    <div class="hand">フラッシュ</div>
-    <div class="hand">ストレート</div>
-    <div class="hand">スリーカード</div>
-    <div class="hand">ツーペア</div>
-    <div class="hand">ワンペア</div>
+    <div>
+      <div class="hand">ロイヤルストレートフラッシュ ×1000</div>
+      <div class="hand">ファイブカード ×100</div>
+      <div class="hand">ストレートフラッシュ ×50</div>
+      <div class="hand">フォーカード ×25</div>
+      <div class="hand">フルハウス ×10</div>
+    </div>
+    <div>
+      <div class="hand">フラッシュ ×8</div>
+      <div class="hand">ストレート ×4</div>
+      <div class="hand">スリーカード ×3</div>
+      <div class="hand">ツーペア ×2</div>
+      <div class="hand">ワンペア ×1</div>
+    </div>
   </div>
 </template>
 
@@ -20,9 +24,12 @@ export default Vue.extend({})
 <style lang="sass" scoped>
 .hand-magnification-block
     border-radius: 10px
-    border: 5px solid #770000
+    border: inset 20px #336600
+    background-color: #336666
+    display: flex
 
 .hand
   font-size: 20px
   text-align: center
+  color: white
 </style>
