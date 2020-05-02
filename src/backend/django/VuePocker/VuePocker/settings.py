@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'poker',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,7 @@ DATABASES = {
         'NAME': 'vuepoker',
         'USER': 'vuepoker',
         'HOST': 'db',
-        'POST': "3306"
+        'POST': "3306",
     }
 }
 
