@@ -58,8 +58,14 @@ export default Vue.extend({
   width: 200px
   height: 50px
   border-radius: 10px
-  box-shadow: 10px 5px 5px red;
-  font-size: 20px
+  box-shadow: 0px 10px 10px #339999
+  font-size: 30px
+  background-color: #33FFCC
+  color: yellow
+
+.start-button:active
+  background-color: #336633
+
 
 .card-block
   display: flex
