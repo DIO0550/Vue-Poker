@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73eb35ff-8c25-44fb-adf4-8e44870ddd54" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/VuePocker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/VuePocker/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poker/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/poker/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poker/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/poker/models.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1bO36YooAYD52FKPc6SPoxZtGN1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73eb35ff-8c25-44fb-adf4-8e44870ddd54" name="Default Changelist" comment="" />
+      <created>1588489137761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588489137761</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="339" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588503081828">
+      <screen x="0" y="23" width="1920" height="992" />
+    </state>
+    <state x="0" y="339" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.992@0.23.1920.992" timestamp="1588503081828" />
+    <state x="469" y="158" key="SettingsEditor" timestamp="1588504098586">
+      <screen x="0" y="23" width="1920" height="992" />
+    </state>
+    <state x="469" y="158" key="SettingsEditor/0.23.1920.992@0.23.1920.992" timestamp="1588504098586" />
+  </component>
+</project>
