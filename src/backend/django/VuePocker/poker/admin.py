@@ -27,7 +27,7 @@ class PokerUser(AbstractBaseUser, PermissionsMixin):
 
     USERNAME_FIELD="username"
 
-    objects = RacchaiUserManager()
+    objects = PokerUserManager()
 
     class Meta:
         db_table = 'poker_user'
