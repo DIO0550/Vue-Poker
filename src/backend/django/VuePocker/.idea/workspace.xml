@@ -16,12 +16,19 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73eb35ff-8c25-44fb-adf4-8e44870ddd54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VuePocker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/VuePocker/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poker/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/poker/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poker/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/poker/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +80,10 @@
       <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="0" y="339" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.992@0.23.1920.992" timestamp="1588503081828" />
+    <state x="382" y="161" width="1200" height="752" key="DiffContextDialog" timestamp="1588762393086">
+      <screen x="0" y="23" width="1920" height="992" />
+    </state>
+    <state x="382" y="161" width="1200" height="752" key="DiffContextDialog/0.23.1920.992@0.23.1920.992" timestamp="1588762393086" />
     <state x="469" y="158" key="SettingsEditor" timestamp="1588504098586">
       <screen x="0" y="23" width="1920" height="992" />
     </state>
