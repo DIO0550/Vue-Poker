@@ -36,6 +36,10 @@ export default Vue.extend({
      * カードの色
      */
     cardColor() {
+      if (this.cardMark === DPokerLib.card.CARD_MARK.JOKER) {
+        return 'card-joker'
+      }
+
       if (
         this.cardMark === DPokerLib.card.CARD_MARK.SPADE ||
         this.cardMark === DPokerLib.card.CARD_MARK.CLUB
@@ -135,4 +139,8 @@ export default Vue.extend({
     bottom: 40px
     right: 6px
     transform: rotate(180deg)
+
+.card-joker
+  color: blue
+  font-size: 30px
 </style>

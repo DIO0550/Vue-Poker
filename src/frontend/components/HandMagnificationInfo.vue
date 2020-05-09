@@ -1,7 +1,7 @@
 <template>
   <div class="hand-magnification-block">
     <div class="hand-manage-list">
-      <table>
+      <table align="center">
         <tbody>
           <tr>
             <td class="hand">ロイヤルストレートフラッシュ</td>
@@ -27,7 +27,7 @@
       </table>
     </div>
     <div class="hand-manage-list">
-      <table>
+      <table align="center">
         <tbody>
           <tr>
             <td class="hand">フラッシュ</td>
@@ -64,7 +64,7 @@ export default Vue.extend({})
     border-radius: 10px
     border: inset 20px #336600
     background-color: #336666
-    display: flex
+    display: inline-block
     width: auto
 
 .hand
@@ -73,6 +73,6 @@ export default Vue.extend({})
   color: white
 
 .hand-manage-list
+  display: inline-block
   width: 500px
-  display: flex
 </style>

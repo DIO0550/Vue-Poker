@@ -1,13 +1,14 @@
 <template>
   <div>
-    <handMagnificationInfo />
+    <handMagnificationInfo class="hand-magnification-info" />
     <div class="card-block">
       <card
+        class="card"
         v-for="card in handCards"
         :key="card.number + card.mark"
         :card-mark="card.mark"
         :card-number="card.number"
-      ></card>
+      />
     </div>
     <div class="game-info-block">
       <div>
@@ -61,13 +62,20 @@ export default Vue.extend({
   box-shadow: 0px 10px 10px #339999
   font-size: 30px
   background-color: #33FFCC
-  color: yellow
+  color: #FFCC00
 
 .start-button:active
-  background-color: #336633
+  background-color: #339966
 
+.hand-magnification-info
+  margin-top: 20px
+  margin-bottom: 20px
 
 .card-block
   display: flex
   width: 2000px
+
+.card
+  margin-left: 10px
+  margin-right: 10px
 </style>
